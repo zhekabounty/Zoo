@@ -141,11 +141,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Zoo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Animals\Animals.vcxproj">
       <Project>{eaefd405-fbf6-48ce-9f5a-0c376417949b}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Zoo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
