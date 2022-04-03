@@ -7,14 +7,10 @@
 
 /* 1. Волк (Wolf)
 2. Медведь (Bear)
-3. Страус (Ostrich)
-4. Павлин (Peacock)
-5. Тигр (Tiger)
-6. Слон (Elephant)
-7. Лев (Leo)
-8. Крокодил (Crocodile)
-9. Жираф (Giraffe)
-10. Лиса (Fox) */
+3. Павлин (Peacock)
+4. Жираф (Giraffe)
+5. Заяц (Hare)
+6. Лиса (Fox) */
 
 using namespace std;
 
@@ -23,4 +19,5 @@ int main() {
 	srand(time(NULL));
 	Zoo z;
 	z.ShowCells();
+	z.ZooMenu();
 }

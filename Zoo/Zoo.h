@@ -1,14 +1,18 @@
 #pragma once
 #include "Animals.h"
+#include "AddException.h"
+#include <vector>
 
 class Cell {
-	Animal* animal;
-	int empty;
+	Animal* animal_1;
+	Animal* animal_2;
+	int fullness;
 public:
-	Cell() :animal(0), empty(0) {};
-	Cell(Animal* _animal) : animal(_animal), empty(1) {};
+	Cell() : animal_1(0), animal_2(0), fullness(0) {};
+	Cell(Animal* _animal);
+	void AddAnimal(Animal* _animal);
 	void ShowCell();
-	void ShowVoice();
+	int getFullness() { return fullness; };
 };
 
 class Zoo {
@@ -18,4 +22,7 @@ public:
 	Zoo();
 	~Zoo();
 	void ShowCells();
+	void ZooMenu();
 };
+
+int GetPointMenu(int count);

@@ -116,7 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../Animals;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../Animals; ../Exception;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,12 +144,15 @@
     <ClCompile Include="Zoo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Zoo.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Animals\Animals.vcxproj">
       <Project>{eaefd405-fbf6-48ce-9f5a-0c376417949b}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Zoo.h" />
+    <ProjectReference Include="..\Exception\Exception.vcxproj">
+      <Project>{124af925-bc3e-491b-95db-1013a7faf5d4}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

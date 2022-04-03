@@ -17,115 +17,61 @@ public:
 /*
 1. Волк
 2. Медведь
-3. Страус
-4. Павлин
-5. Тигр
-6. Слон
-7. Лев
-8. Крокодил
-9. Жираф
-10. Лиса*/
+3. Павлин
+4. Жираф
+5. Заяц
+6. Лиса*/
 
 class Predatory :public Animal { // хищники
-	string class_;
 public:
-	Predatory() : class_("хищники") {};
-	string getClass() { return class_; }
+	Predatory() {};
+	string getClass() { return "хищники"; }
 };
 
 class Wolf :public Predatory { // Волк
-	string view;
-	string voice;
 public:
-	Wolf() : view("Белый волк"), voice("у-у-у") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
+	Wolf() {};
+	string getVoice() { return "у-у-у"; }
+	string getView() { return "Волк"; }
 };
 
 class Bear :public Predatory { // Медведь
-	string view;
-	string voice;
 public:
-	Bear() : view("Европейский бурый медведь"), voice("р-р-р") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
-};
-
-class Tiger :public Predatory { // Тигр
-	string view;
-	string voice;
-public:
-	Tiger() : view("Амурский тигр"), voice("р-р-р") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
-};
-
-class Leo :public Predatory { // Лев
-	string view;
-	string voice;
-public:
-	Leo() : view("Персидский лев"), voice("р-р-р") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
-};
-
-class Crocodile :public Predatory { // Крокодил
-	string view;
-	string voice;
-public:
-	Crocodile() : view("Острорылый крокодил"), voice("р-р-р") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
+	Bear() {};
+	string getVoice() { return "р-р-р"; }
+	string getView() { return "Медведь"; }
 };
 
 class Fox :public Predatory { // Лиса
-	string view;
-	string voice;
 public:
-	Fox() : view("Афганская лисица"), voice("фыр-фыр-фыр") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
+	Fox() {};
+	string getVoice() { return "фыр-фыр-фыр"; }
+	string getView() { return "Лисица"; }
 };
 
 class Herbivores :public Animal {
-	string class_;
 public:
-	Herbivores() :class_("травоядные") {};
-	string getClass() { return class_; }
+	Herbivores() {};
+	string getClass() { return "травоядные"; }
 };
 
 class Giraffe :public Herbivores { // Жираф
-	string view;
-	string voice;
 public:
-	Giraffe() : view("Угандийский жираф"), voice("м-м-м") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
-};
-
-class Ostrich :public Herbivores { // Страус
-	string view;
-	string voice;
-public:
-	Ostrich() : view("Африканский страус"), voice("о-о-о") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
+	Giraffe() {};
+	string getVoice() { return "м-м-м"; }
+	string getView() { return "Жираф"; }
 };
 
 class Peacock :public Herbivores { // Павлин
-	string view;
-	string voice;
 public:
-	Peacock() : view("Индийский павлин"), voice("а-а-а") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
+	Peacock() {};
+	string getVoice() { return "а-а-а"; }
+	string getView() { return "Павлин"; }
 };
 
-class Elephant :public Herbivores { // Слон
-	string view;
-	string voice;
+class Hare :public Herbivores { // Заяц
 public:
-	Elephant() : view("Африканский слон"), voice("ву-ву-ву") {};
-	string getVoice() { return voice; }
-	string getView() { return view; }
+	Hare() {};
+	string getVoice() { return "хр-хр-хр"; }
+	string getView() { return "Заяц"; }
 };
