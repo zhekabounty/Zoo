@@ -14,64 +14,50 @@ public:
 	virtual int getAge() { return age; }
 };
 
-/*
-1. Волк
-2. Медведь
-3. Павлин
-4. Жираф
-5. Заяц
-6. Лиса*/
-
-class Predatory :public Animal { // хищники
-public:
-	Predatory() {};
-	string getClass() { return "хищники"; }
-};
-
-class Wolf :public Predatory { // Волк
+class Wolf :public Animal { // Волк
 public:
 	Wolf() {};
+	string getClass() { return "хищники"; }
 	string getVoice() { return "у-у-у"; }
 	string getView() { return "Волк"; }
 };
 
-class Bear :public Predatory { // Медведь
+class Bear :public Animal { // Медведь
 public:
 	Bear() {};
+	string getClass() { return "хищники"; }
 	string getVoice() { return "р-р-р"; }
 	string getView() { return "Медведь"; }
 };
 
-class Fox :public Predatory { // Лиса
+class Fox :public Animal { // Лиса
 public:
 	Fox() {};
+	string getClass() { return "хищники"; }
 	string getVoice() { return "фыр-фыр-фыр"; }
 	string getView() { return "Лисица"; }
 };
 
-class Herbivores :public Animal {
-public:
-	Herbivores() {};
-	string getClass() { return "травоядные"; }
-};
-
-class Giraffe :public Herbivores { // Жираф
+class Giraffe :public Animal { // Жираф
 public:
 	Giraffe() {};
+	string getClass() { return "травоядные"; }
 	string getVoice() { return "м-м-м"; }
 	string getView() { return "Жираф"; }
 };
 
-class Peacock :public Herbivores { // Павлин
+class Peacock :public Animal { // Павлин
 public:
 	Peacock() {};
+	string getClass() { return "травоядные"; }
 	string getVoice() { return "а-а-а"; }
 	string getView() { return "Павлин"; }
 };
 
-class Hare :public Herbivores { // Заяц
+class Hare :public Animal { // Заяц
 public:
 	Hare() {};
+	string getClass() { return "травоядные"; }
 	string getVoice() { return "хр-хр-хр"; }
 	string getView() { return "Заяц"; }
 };

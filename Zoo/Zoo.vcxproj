@@ -140,10 +140,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cage.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Zoo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cage.h" />
     <ClInclude Include="Zoo.h" />
   </ItemGroup>
   <ItemGroup>

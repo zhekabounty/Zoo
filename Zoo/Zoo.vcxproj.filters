@@ -21,9 +21,15 @@
     <ClCompile Include="Zoo.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Cage.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Zoo.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Cage.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
